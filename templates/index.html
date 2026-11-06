@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#08111f"
+    >
+
+    <title>Fantasy League</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='/style.css') }}"
+    >
+</head>
+
+
+<body>
+
+    <div class="app-container">
+
+        <!-- ============================= -->
+        <!-- HEADER -->
+        <!-- ============================= -->
+
+        <header class="app-header">
+
+            <div>
+                <p class="brand-label">
+                    FANTASY
+                </p>
+
+                <h1>
+                    League Hub
+                </h1>
+            </div>
+
+            <div class="profile-icon">
+                R
+            </div>
+
+        </header>
+
+
+        <!-- ============================= -->
+        <!-- TAB NAVIGATION -->
+        <!-- ============================= -->
+
+        <nav class="tab-container">
+
+            <button
+                class="tab-button active"
+                data-tab="small-league"
+                type="button"
+            >
+                Small League
+            </button>
+
+            <button
+                class="tab-button"
+                data-tab="grand-league"
+                type="button"
+            >
+                Grand League
+            </button>
+
+        </nav>
+
+
+        <!-- ============================= -->
+        <!-- SMALL LEAGUE -->
+        <!-- ============================= -->
+
+        <main
+            id="small-league"
+            class="tab-content active"
+        >
+
+            <section class="intro">
+
+                <span class="badge">
+                    SMALL LEAGUE
+                </span>
+
+                <h2>
+                    Build a safer fantasy team
+                </h2>
+
+                <p>
+                    Explore sample team combinations
+                    designed for smaller contests where
+                    consistency and balanced selections
+                    matter.
+                </p>
+
+            </section>
+            <section class="card">
+
+    <div class="card-image-wrapper">
+
+        <img
+            src="/static/images/small_league1.png"
+            alt="Small League Team"
+            class="card-image"
+        >
+
+    </div>
+
+    <div class="card-content">
+
+        <h3>
+            Balanced Team
+        </h3>
+
+        <p>
+            A balanced combination focused on
+            reliable players and consistent
+            performance.
+        </p>
+
+    </div>
+
+</section>
+
+
+            <section class="card">
+
+                <div class="image-placeholder second">
+
+                    <span class="image-icon">
+                        🏆
+                    </span>
+
+                    <span>
+                        Small League Image 2
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Safe Combination
+                    </h3>
+
+                    <p>
+                        Another sample strategy for
+                        smaller leagues with a simple
+                        and practical team structure.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ============================= -->
+        <!-- GRAND LEAGUE -->
+        <!-- ============================= -->
+
+        <main
+            id="grand-league"
+            class="tab-content"
+        >
+
+            <section class="intro">
+
+                <span class="badge grand">
+                    GRAND LEAGUE
+                </span>
+
+                <h2>
+                    Explore high-risk combinations
+                </h2>
+
+                <p>
+                    Grand League strategies can use
+                    different player combinations and
+                    more aggressive selections for
+                    larger contests.
+                </p>
+
+            </section>
+
+
+            <section class="card">
+
+                <div class="image-placeholder grand-one">
+
+                    <span class="image-icon">
+                        ⚡
+                    </span>
+
+                    <span>
+                        Grand League Image 1
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Differential Team
+                    </h3>
+
+                    <p>
+                        A sample combination containing
+                        alternative selections for
+                        higher-risk fantasy contests.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section class="card">
+
+                <div class="image-placeholder grand-two">
+
+                    <span class="image-icon">
+                        🚀
+                    </span>
+
+                    <span>
+                        Grand League Image 2
+                    </span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>
+                        Aggressive Combination
+                    </h3>
+
+                    <p>
+                        Experiment with a more aggressive
+                        fantasy approach designed for
+                        larger contest pools.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <footer>
+            Fantasy League
+        </footer>
+
+    </div>
+
+
+    <script
+        src="{{ url_for('static', path='/app.js') }}"
+    ></script>
+
+</body>
+
+</html>
